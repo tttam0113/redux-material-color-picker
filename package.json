@@ -25,6 +25,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.4",
     "babel-polyfill": "^6.26.0",
+    "clipboard-polyfill": "^2.7.0",
     "css-loader": "^1.0.0",
     "deep-diff": "^1.0.2",
     "draft-js": "^0.10.5",
