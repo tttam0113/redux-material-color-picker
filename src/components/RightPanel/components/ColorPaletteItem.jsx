@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { common } from 'utils/colors';
 import { getContrastRatio } from 'utils/colorManipulator';
 
+const CONTRAST_THRESHOLD = 3;
 const getContrastText = background => {
-  const contrastThreshold = 3;
   const contrastRatio = getContrastRatio(background, common.white);
-  return contrastRatio >= contrastThreshold ? common.white : common.black;
+  return contrastRatio >= CONTRAST_THRESHOLD ? common.white : common.black;
 };
 
 const ColorPaletteItem = ({ colorWeight, colorHex, copiedColor, onClick }) => (

@@ -1,4 +1,4 @@
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import actionSplitterMiddleware from './middlewares/core/actionSplitter';
 import loggerMiddleware from './middlewares/core/logger';
 import colorsMiddleware from './middlewares/feature/colors';

@@ -1,5 +1,4 @@
 import AppView from 'views/AppView';
-// import requireAuth from '../hoc/requireAuth';
 
 const indexRoutes = [
   {

@@ -1,11 +1,7 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Router, Redirect, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-// import Header from 'containers/HeaderContainer';
-// import Header from 'containers/HeaderContainer';
-// import Footer from 'components/Footer';
 import indexRoutes from 'routes';
 
 export const history = createHistory();
@@ -26,15 +22,7 @@ class App extends React.Component {
 
   switchRoutes = () => <Switch>{indexRoutes.map(this.renderRoute)}</Switch>;
 
-  renderLayout = () => (
-    <div>
-      {/* <Header /> */}
-      <div className="container">
-        {this.switchRoutes()}
-      </div>
-      {/* <Footer /> */}
-    </div>
-  );
+  renderLayout = () => <div className="container">{this.switchRoutes()}</div>;
 
   render() {
     return <Router history={history}>{this.renderLayout()}</Router>;

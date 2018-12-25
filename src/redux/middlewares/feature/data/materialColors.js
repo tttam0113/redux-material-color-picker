@@ -5,5 +5,4 @@ const materialColors = {
   ...rest,
 };
 
-console.log(materialColors);
 export default materialColors;

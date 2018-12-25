@@ -26,7 +26,7 @@ class ColorPalette extends React.Component {
         <ol className="color-palette">
           {Object.keys(palette).map(colorWeight => (
             <ColorPaletteItem
-              key={colorWeight}
+              key={`${selectedColor}-${colorWeight}`}
               colorWeight={colorWeight}
               colorHex={palette[colorWeight]}
               onClick={this.handleOnClick}
