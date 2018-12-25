@@ -1,0 +1,23 @@
+.container {
+  padding: 1.6rem;
+}
+
+.material-color-picker {
+  background-color: white;
+  border: 1px solid #78909c;
+  border-radius: .8rem;
+  box-shadow: 0 1.6rem 12.8rem rgba(black, 0.35);
+  display: flex;
+  margin: 0 auto;
+  width: 51.2rem;
+
+  &__left-panel {
+    z-index: 1;
+  }
+
+  &__right-panel {
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+  }
+}
